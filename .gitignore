@@ -1,0 +1,62 @@
+# Environment files
+.env
+.env.local
+.env.*
+!.env.example
+!**/.env.example
+!frontend/.env.local.example
+
+# SSH keys, certificates, and host records
+*.pem
+*.key
+known_hosts
+.secrets_master.key
+.secrets_store.json
+**/.secrets_master.key
+**/.secrets_store.json
+
+# Databases
+*.db
+*.sqlite
+
+# Workspace temporary directories
+workspace/
+**/workspace/
+github_clones/
+**/github_clones/
+
+# Dependencies and build outputs
+node_modules/
+**/node_modules/
+.next/
+**/.next/
+dist/
+**/dist/
+build/
+**/build/
+
+# Python cache and virtual environments
+__pycache__/
+**/__pycache__/
+.pytest_cache/
+**/.pytest_cache/
+venv/
+**/venv/
+.venv/
+**/.venv/
+*.py[cod]
+
+# OS metadata
+.DS_Store
+**/.DS_Store
+
+# IDEs and editors
+.vscode/
+**/.vscode/
+.idea/
+**/.idea/
+
+# Negation rules: Keep test sample fixtures tracked
+!tests/sample-repos/**
+!**/tests/sample-repos/**
+!tests/sample-repos/leaky-app/.env
